@@ -1,0 +1,11 @@
+{
+  "name": "envoy-ssl",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./lib/app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
