@@ -2,7 +2,7 @@
 
 Sample to run envoy with ssl cert generated during container bootup.
 run.sh - startup script that generates certs
-emvoy.yaml - sidecar config that uses certs generated during bootup
+envoy.yaml - sidecar config that uses certs generated during bootup
 lib/app.js - hello world node api. it also uses the same certs but you can run the api without https if you choose to.
 data/ - folder where the certs generated during bootup will be placed
 logs - folder will be created for app & envoy logs.
