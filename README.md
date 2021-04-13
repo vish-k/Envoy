@@ -14,3 +14,4 @@ With Envoy's success some other proxies have remodelled themselves as sidecar, E
 This repo intends to share some tips and tricks related to Envoy.
 
 1. Running Envoy with ssl cert created at bootstrap. (./envoy-ssl)
+2. Envoy sidecar and upstream communication using unix domain sockets (./envoy-unix-socket)

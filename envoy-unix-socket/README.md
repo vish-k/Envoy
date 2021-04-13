@@ -4,12 +4,14 @@ Unix Sockets aka [Unix Domain Sockets](https://en.wikipedia.org/wiki/Unix_domain
 
 TCP/IP sockets are used for communication across the network. Often, TCP/IP sockets are used for facilitating communication between two processes running on the same host. Using TCP/IP sockets, on same host or across network, involves entire network stack & associated APIs/protocols. Consequently, using TCP/IP sockets, for communication between processes on same hosts has some overheads compared to using Unix Sockets.
 
-When using sidecar like Envoy with upstream instance of microservice, it is often beneficial to use Unix Socket instead of TCP/IP socket.
+When using sidecar, like Envoy, with upstream instance of microservice, it is often beneficial to use Unix Socket instead of TCP/IP socket.
 
 This project demonstrates using Unix Domain Socket to communicate between Envoy Sidecar & upstream service.
 
-envoy.yaml - sidecar config.
-lib/app.js - hello world node api.
+* _envoy.yaml_ - sidecar config.
+* _lib/app.js_ - hello world node api.
+
+_Note: Generally the unix sockets are faster than tcp/ip sockets, please benchmark your specific app before switching to unix sockets as you ay see different results for your app specific payloads/patterns_
 
 ## Prerequisites
 1. Docker
